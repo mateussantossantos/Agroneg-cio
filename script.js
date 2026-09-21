@@ -1,82 +1,284 @@
-import { aleatorio, nome } from './aleatorio.js';
-import { perguntas } from './perguntas.js';
+import {
+    aleatorio,
+    nome
+} from "./aleatorio.js";
 
-const caixaPrincipal = document.querySelector(".caixa-principal");
-const caixaPerguntas = document.querySelector(".caixa-perguntas");
-const caixaAlternativas = document.querySelector(".caixa-alternativas");
-const caixaResultado = document.querySelector(".caixa-resultado");
-const textoResultado = document.querySelector(".texto-resultado");
-const botaoJogarNovamente = document.querySelector(".novamente-btn");
-const botaoIniciar = document.querySelector(".iniciar-btn");
-const telaInicial = document.querySelector(".tela-inicial");
+import {
+    perguntas
+} from "./perguntas.js";
+
+
+const caixaPerguntas =
+    document.querySelector(
+        ".caixa-perguntas"
+    );
+
+
+const caixaAlternativas =
+    document.querySelector(
+        ".caixa-alternativas"
+    );
+
+
+const caixaResultado =
+    document.querySelector(
+        ".caixa-resultado"
+    );
+
+
+const textoResultado =
+    document.querySelector(
+        ".texto-resultado"
+    );
+
+
+const nomeResultado =
+    document.querySelector(
+        ".nome-resultado"
+    );
+
+
+const botaoIniciar =
+    document.querySelector(
+        ".iniciar-btn"
+    );
+
+
+const botaoJogarNovamente =
+    document.querySelector(
+        ".novamente-btn"
+    );
+
+
+const telaInicial =
+    document.querySelector(
+        ".tela-inicial"
+    );
+
 
 let atual = 0;
+
 let perguntaAtual;
+
 let historiaFinal = "";
 
-botaoIniciar.addEventListener('click', iniciaJogo);
+
+
+/* INICIAR */
+
+botaoIniciar.addEventListener(
+    "click",
+    iniciaJogo
+);
+
+
 
 function iniciaJogo() {
+
     atual = 0;
+
     historiaFinal = "";
-    telaInicial.style.display = 'none';
-    caixaPerguntas.classList.remove("mostrar");
-    caixaAlternativas.classList.remove("mostrar");
-    caixaResultado.classList.remove("mostrar");
+
+    telaInicial.style.display =
+        "none";
+
+    caixaPerguntas.classList.add(
+        "mostrar"
+    );
+
+    caixaAlternativas.classList.add(
+        "mostrar"
+    );
+
+    caixaResultado.classList.remove(
+        "mostrar"
+    );
+
     mostraPergunta();
 }
 
+
+
+/* MOSTRAR PERGUNTA */
+
 function mostraPergunta() {
-    if (atual >= perguntas.length) {
+
+    if (
+        atual >= perguntas.length
+    ) {
+
         mostraResultado();
+
         return;
     }
-    perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
+
+
+    perguntaAtual =
+        perguntas[atual];
+
+
+    caixaPerguntas.textContent =
+        perguntaAtual.enunciado;
+
+
+    caixaAlternativas.innerHTML =
+        "";
+
+
     mostraAlternativas();
 }
 
+
+
+/* ALTERNATIVAS */
+
 function mostraAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
-        const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
-        caixaAlternativas.appendChild(botaoAlternativas);
+
+    for (
+        const alternativa
+        of perguntaAtual.alternativas
+    ) {
+
+        const botao =
+            document.createElement(
+                "button"
+            );
+
+
+        botao.type =
+            "button";
+
+
+        botao.textContent =
+            alternativa.texto;
+
+
+        botao.addEventListener(
+            "click",
+            function () {
+
+                respostaSelecionada(
+                    alternativa
+                );
+
+            }
+        );
+
+
+        caixaAlternativas.appendChild(
+            botao
+        );
+
     }
+
 }
 
-function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
-    historiaFinal += afirmacoes + " ";
-    if (opcaoSelecionada.proxima !== undefined) {
-        atual = opcaoSelecionada.proxima;
-    } else {
-        mostraResultado();
-        return;
+
+
+/* RESPOSTA */
+
+function respostaSelecionada(
+    opcaoSelecionada
+) {
+
+    if (
+        Array.isArray(
+            opcaoSelecionada.afirmacao
+        )
+    ) {
+
+        const afirmacao =
+            aleatorio(
+                opcaoSelecionada.afirmacao
+            );
+
+
+        historiaFinal +=
+            afirmacao + " ";
     }
-    mostraPergunta();
+
+
+    if (
+        opcaoSelecionada.proxima
+        !== undefined
+    ) {
+
+        atual =
+            opcaoSelecionada.proxima;
+
+        mostraPergunta();
+
+    } else {
+
+        mostraResultado();
+
+    }
+
 }
+
+
+
+/* RESULTADO */
 
 function mostraResultado() {
-    caixaPerguntas.textContent = `Em 2049, ${nome}`;
-    textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
-    caixaResultado.classList.add("mostrar");
-    botaoJogarNovamente.addEventListener("click", jogaNovamente);
+
+    nomeResultado.textContent =
+        `Perfil: ${nome}`;
+
+
+    textoResultado.textContent =
+        historiaFinal.trim();
+
+
+    caixaPerguntas.classList.remove(
+        "mostrar"
+    );
+
+
+    caixaAlternativas.classList.remove(
+        "mostrar"
+    );
+
+
+    caixaResultado.classList.add(
+        "mostrar"
+    );
+
 }
+
+
+
+/* JOGAR NOVAMENTE */
+
+botaoJogarNovamente.addEventListener(
+    "click",
+    jogaNovamente
+);
+
+
 
 function jogaNovamente() {
+
     atual = 0;
+
     historiaFinal = "";
-    caixaResultado.classList.remove("mostrar");
+
+
+    caixaResultado.classList.remove(
+        "mostrar"
+    );
+
+
+    caixaPerguntas.classList.add(
+        "mostrar"
+    );
+
+
+    caixaAlternativas.classList.add(
+        "mostrar"
+    );
+
+
     mostraPergunta();
-}
 
-function substituiNome() {
-    for (const pergunta of perguntas) {
-        pergunta.enunciado = pergunta.enunciado.replace(/você/g, nome);
-    }
 }
-
-substituiNome();

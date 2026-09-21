@@ -1,173 +1,318 @@
 export const perguntas = [
+
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado:
+            "🌱 Você é um produtor rural e precisa acompanhar uma grande plantação. Como a Inteligência Artificial pode ajudar?",
+
         alternativas: [
+
             {
-                texto: "Isso é assustador!",
+                texto:
+                    "Analisando dados da plantação e ajudando a identificar problemas.",
+
                 afirmacao: [
-                    "No início ficou com medo do que essa tecnologia pode fazer.",
-                    "Achou assustador pensar na velocidade na qual a tecnologia está avançando."
+
+                    "Você percebeu que a IA pode ajudar o produtor a acompanhar melhor sua plantação.",
+
+                    "Você entendeu que os dados podem auxiliar na tomada de decisões no campo."
+
                 ],
-                proxima: 1,
+
+                proxima: 1
             },
+
             {
-                texto: "Isso é maravilhoso!",
+                texto:
+                    "Continuar acompanhando tudo somente de forma manual.",
+
                 afirmacao: [
-                    "Quis saber como usar IA no seu dia a dia.",
-                    "Pensou que IA pode ajudar em tarefas da sua vida."
+
+                    "Você prefere utilizar principalmente os métodos tradicionais do campo.",
+
+                    "Você percebeu que o conhecimento do produtor continua sendo muito importante."
+
                 ],
-                proxima: 2,
-            },
+
+                proxima: 1
+            }
+
         ]
     },
+
+
     {
-        enunciado: "Utilizar uma IA pode ser aterrorizante mesmo, e foi pensando nisso que uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado:
+            "🚁 Uma propriedade rural possui uma grande área plantada. Como drones podem ajudar o produtor?",
+
         alternativas: [
+
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+                texto:
+                    "Monitorando a plantação por meio de imagens aéreas.",
+
                 afirmacao: [
-                    "Conseguiu utilizar a IA para buscar informações úteis.",
-                    "Percebeu que a IA pode ajudar a encontrar informações úteis na internet de forma mais rápida e direcionada.",
-                    "Percebeu que a IA consegue explicar termos complicados de forma simplificada e isso ajudou muito suas pesquisas sobre assuntos complexos."
+
+                    "Você percebeu que drones podem facilitar o monitoramento das plantações.",
+
+                    "Você entendeu que imagens aéreas podem ajudar a encontrar problemas no campo."
+
                 ],
-                proxima: 3,
+
+                proxima: 2
             },
+
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                texto:
+                    "Usando drones apenas para diversão.",
+
                 afirmacao: [
-                    "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho.",
-                    "Achou que era muito mais fácil procurar por respostas utilizando alguns meios mais tradicionais mesmo que levasse mais tempo.",
-                    "Sentiu um pouco de medo de quais dados pessoais seus a IA poderia utilizar e por isso prefere fazer suas coisas com pouca intromissão da tecnologia."
+
+                    "Você descobriu que drones podem ter aplicações importantes no agronegócio.",
+
+                    "Você percebeu que essa tecnologia pode ser utilizada para monitorar áreas agrícolas."
+
                 ],
-                proxima: 4,
-            },
+
+                proxima: 2
+            }
+
         ]
     },
+
+
     {
-        enunciado: "Um chat com IA pode ser uma boa alternativa para realizar tarefas do dia a dia e foi pensando nisso que uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado:
+            "🌎 O solo é essencial para a produção agrícola. Como sensores e IA podem ajudar?",
+
         alternativas: [
+
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+                texto:
+                    "Analisando informações sobre umidade e condições do solo.",
+
                 afirmacao: [
-                    "Conseguiu utilizar a IA para buscar informações úteis.",
-                    "Percebeu que a IA pode ajudar a encontrar informações úteis na internet de forma mais rápida e direcionada.",
-                    "Percebeu que a IA consegue explicar termos complicados de forma simplificada e isso ajudou muito suas pesquisas sobre assuntos complexos."
+
+                    "Você entendeu que sensores podem fornecer informações importantes sobre o solo.",
+
+                    "Você percebeu que os dados podem ajudar o produtor a tomar decisões melhores."
+
                 ],
-                proxima: 3,
+
+                proxima: 3
             },
+
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                texto:
+                    "Ignorando as condições do solo.",
+
                 afirmacao: [
-                    "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho.",
-                    "Achou que era muito mais fácil procurar por respostas utilizando alguns meios mais tradicionais mesmo que levasse mais tempo.",
-                    "Sentiu um pouco de medo de quais dados pessoais seus a IA poderia utilizar e por isso prefere fazer suas coisas com pouca intromissão da tecnologia."
+
+                    "Você percebeu que conhecer o solo é importante para uma boa produção.",
+
+                    "Você entendeu que informações sobre o solo podem ajudar no planejamento agrícola."
+
                 ],
-                proxima: 4,
-            },
+
+                proxima: 3
+            }
+
         ]
     },
+
+
     {
-        enunciado: "Ferramentas de busca que utilizam IA podem facilitar muito nosso processo de busca por informações. Agora imagine que você precisa participar de um debate sobre o quanto a IA impacta no trabalho do futuro. Qual posicionamento tomar?",
+        enunciado:
+            "💧 A água é fundamental para a agricultura. Como a IA pode ajudar na irrigação?",
+
         alternativas: [
+
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto:
+                    "Analisando dados para aplicar água de acordo com a necessidade da plantação.",
+
                 afirmacao: [
-                    "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA.",
-                    "Participa ativamente do desenvolvimento de soluções criativas e na melhoria de processos em IA."
+
+                    "Você percebeu que a tecnologia pode ajudar a utilizar a água de maneira mais eficiente.",
+
+                    "Você entendeu que dados podem auxiliar no planejamento da irrigação."
+
                 ],
-                proxima: 5,
+
+                proxima: 4
             },
+
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto:
+                    "Aplicando a mesma quantidade de água em toda a propriedade.",
+
                 afirmacao: [
-                    "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
-                    "Criou grupos de ética voltado para IA e busca ativamente reduzir as desigualdades geradas pela automação."
+
+                    "Você percebeu que diferentes áreas podem ter necessidades diferentes de água.",
+
+                    "Você entendeu que o uso eficiente da água pode contribuir para a sustentabilidade."
+
                 ],
-                proxima: 6,
-            },
+
+                proxima: 4
+            }
+
         ]
     },
+
+
     {
-        enunciado: "Utilizar informações próprias traz um toque pessoal ao nosso trabalho. Agora imagine que você precisa participar de um debate sobre o quanto a IA impacta no trabalho do futuro. Qual posicionamento tomar?",
+        enunciado:
+            "☀️ As condições climáticas influenciam a agricultura. Como a tecnologia pode ajudar o produtor?",
+
         alternativas: [
+
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto:
+                    "Analisando informações climáticas para ajudar no planejamento.",
+
                 afirmacao: [
-                    "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA.",
-                    "Participa ativamente do desenvolvimento de soluções criativas e na melhoria de processos em IA."
+
+                    "Você percebeu que informações climáticas podem ajudar o agricultor a planejar suas atividades.",
+
+                    "Você entendeu que dados sobre o clima podem auxiliar nas decisões do campo."
+
                 ],
-                proxima: 5,
+
+                proxima: 5
             },
+
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto:
+                    "Ignorando completamente as condições climáticas.",
+
                 afirmacao: [
-                    "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
-                    "Criou grupos de ética voltado para IA e busca ativamente reduzir as desigualdades geradas pela automação."
+
+                    "Você percebeu que acompanhar o clima é importante para a produção agrícola.",
+
+                    "Você entendeu que as condições climáticas podem influenciar o trabalho no campo."
+
                 ],
-                proxima: 6,
-            },
+
+                proxima: 5
+            }
+
         ]
     },
+
+
     {
-        enunciado: "Novas tecnologias trazem novos desafios, por isso após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado:
+            "🚜 Máquinas agrícolas modernas podem utilizar tecnologia e dados. Qual pode ser uma vantagem?",
+
         alternativas: [
+
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto:
+                    "Ajudar a realizar tarefas agrícolas com mais precisão.",
+
                 afirmacao: [
-                    "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA.",
-                    "Participa ativamente do desenvolvimento de soluções criativas e na melhoria de processos em IA."
+
+                    "Você percebeu que a tecnologia pode aumentar a precisão das atividades agrícolas.",
+
+                    "Você entendeu que máquinas inteligentes podem auxiliar o produtor."
+
                 ],
-                proxima: 7,
+
+                proxima: 6
             },
+
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto:
+                    "Usar tecnologia sem planejamento.",
+
                 afirmacao: [
-                    "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
-                    "Criou grupos de ética voltado para IA e busca ativamente reduzir as desigualdades geradas pela automação."
+
+                    "Você percebeu que a tecnologia precisa ser utilizada de maneira planejada.",
+
+                    "Você entendeu que o uso correto das máquinas é importante para obter bons resultados."
+
                 ],
-                proxima: 7,
-            },
+
+                proxima: 6
+            }
+
         ]
     },
+
+
     {
-        enunciado: "É muito importante refletir sobre os trabalhadores do futuro. Por isso a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado:
+            "🌿 Como a Inteligência Artificial pode contribuir para uma agricultura mais sustentável?",
+
         alternativas: [
+
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto:
+                    "Ajudando a utilizar água, insumos e outros recursos de maneira mais eficiente.",
+
                 afirmacao: [
-                    "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA.",
-                    "Participa ativamente do desenvolvimento de soluções criativas e na melhoria de processos em IA."
+
+                    "Você percebeu que tecnologia e sustentabilidade podem trabalhar juntas.",
+
+                    "Você entendeu que o uso eficiente dos recursos pode contribuir para a sustentabilidade."
+
                 ],
-                proxima: 7,
+
+                proxima: 7
             },
+
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto:
+                    "Utilizando tecnologia sem preocupação com o meio ambiente.",
+
                 afirmacao: [
-                    "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
-                    "Criou grupos de ética voltado para IA e busca ativamente reduzir as desigualdades geradas pela automação."
+
+                    "Você percebeu que inovação também precisa considerar a preservação ambiental.",
+
+                    "Você entendeu que o desenvolvimento agrícola deve buscar equilíbrio com o meio ambiente."
+
                 ],
-                proxima: 7,
-            },
+
+                proxima: 7
+            }
+
         ]
     },
+
+
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado:
+            "🔮 Como você imagina o futuro do agronegócio com a Inteligência Artificial?",
+
         alternativas: [
+
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+                texto:
+                    "Um campo mais tecnológico, produtivo e sustentável.",
+
                 afirmacao: [
-                    "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes.",
-                    "Ainda acha que os meios de desenho tradicionais são mais eficazes para a criatividade, por isso vem estimulando pessoas em suas redes sociais a fazer pintura em aquarela."
-                ],
+
+                    "Você acredita que a tecnologia pode contribuir para transformar a agricultura.",
+
+                    "Você percebeu que a IA pode ser uma ferramenta importante para o futuro do agronegócio."
+
+                ]
             },
+
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
+                texto:
+                    "Um campo que combine tecnologia com o conhecimento dos produtores.",
+
                 afirmacao: [
-                    "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!",
-                    "Compartilhou artes em redes sociais como forma de ensinar como se comunicar através da arte.",
-                    "Percebeu que muitas pessoas têm dificuldade em expressar suas ideias desenhando e acha que a IA é capaz de empoderar essas pessoas a tirarem ideias do papel."
-                ],
-            },
+
+                    "Você percebeu que a tecnologia pode trabalhar junto com a experiência dos agricultores.",
+
+                    "Você entendeu que o futuro do agronegócio pode unir pessoas, tecnologia e sustentabilidade."
+
+                ]
+            }
+
         ]
     }
+
 ];
